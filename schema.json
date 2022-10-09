@@ -1,0 +1,11 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-timer",
+    "friendlyName": "bb-timer",
+    "description": "A kinda cool timer thing",
+    "icon": "Text",
+    "settings": []
+  }
+}

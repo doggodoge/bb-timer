@@ -1,0 +1,24 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Run tests
+        run: |
+          npm install -g pnpm
+          pnpm install
+          pnpm run test
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
