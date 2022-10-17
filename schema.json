@@ -3,8 +3,8 @@
   "metadata": {},
   "schema": {
     "name": "bb-timer",
-    "friendlyName": "bb-timer",
-    "description": "A kinda cool timer thing",
+    "friendlyName": "Timer",
+    "description": "A timer with event trigger",
     "icon": "Text",
     "settings": [
       {

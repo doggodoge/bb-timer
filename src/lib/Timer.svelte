@@ -1,9 +1,13 @@
 <script lang="ts">
   import longTimeToSecs from './utils/longTimeToSecs.ts';
+  import TimerButton from './components/TimerButton.svelte';
   import TimerInput from './components/TimerInput.svelte';
   import splitInput from './components/utils/splitInput';
   import secsToLongTime from './utils/secsToLongTime';
   import { createEventDispatcher } from 'svelte';
+  import playSvg from './icons/play.svg';
+  import stopSvg from './icons/stop.svg';
+  import refreshSvg from './icons/refresh.svg';
 
   const dispatch = createEventDispatcher();
   function timeout(): void {
@@ -14,7 +18,6 @@
   let timerIsRunning = false;
   let counter = 0;
   let displayTime = '000000';
-  $: startStopButtonLabel = timerIsRunning ? 'Stop' : 'Start';
 
   let hrs = 0;
   let secs = 0;
@@ -28,9 +31,9 @@
 
   function newDisplayTime(counter: number): string {
     const longTime = secsToLongTime(counter);
-    const hour = longTime.hour.padStart(2, "0");
-    const minute = longTime.minute.padStart(2, "0");
-    const second = longTime.second.padStart(2, "0");
+    const hour = longTime.hour.padStart(2, '0');
+    const minute = longTime.minute.padStart(2, '0');
+    const second = longTime.second.padStart(2, '0');
     return `${hour}${minute}${second}`;
   }
 
@@ -78,8 +81,16 @@
   </div>
 
   <div class="button-container">
-    <button on:click={handleStartStopClick}>{startStopButtonLabel}</button>
-    <button on:click={reset}>Reset</button>
+    <TimerButton on:click={handleStartStopClick}>
+      {#if timerIsRunning}
+        <img src={stopSvg} alt="Stop icon" />
+      {:else}
+        <img src={playSvg} alt="Start icon" />
+      {/if}
+    </TimerButton>
+    <TimerButton on:click={reset}>
+      <img src={refreshSvg} alt="Refresh icon" />
+    </TimerButton>
   </div>
 </div>
 

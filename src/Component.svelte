@@ -17,5 +17,8 @@
 <style>
   :root {
     --blue: #4285f4;
+
+    --grey-3: #eeeeee;
+    --grey-4: #e0e0e0;
   }
 </style>

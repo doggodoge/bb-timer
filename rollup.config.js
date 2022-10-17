@@ -105,7 +105,9 @@ export default {
       browser: true,
       skip: ['svelte', 'svelte/internal'],
     }),
-    svg(),
+    svg({
+      base64: true,
+    }),
     json(),
     terser(),
     copy({
