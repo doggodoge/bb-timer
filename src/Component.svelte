@@ -1,10 +1,21 @@
-<script>
+<script lang="ts">
   import { getContext } from 'svelte';
+  import Timer from './lib/Timer.svelte';
+
+  export let timeout: () => void = () => {
+    /* do nothing */
+  };
 
   const { styleable } = getContext('sdk');
   const component = getContext('component');
 </script>
 
 <div use:styleable={$component.styles}>
-  <p style="color: red;">Not implemented</p>
+  <Timer on:timeout={timeout} />
 </div>
+
+<style>
+  :root {
+    --blue: #4285f4;
+  }
+</style>

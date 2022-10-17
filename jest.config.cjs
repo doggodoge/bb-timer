@@ -4,7 +4,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
-  moduleFileExtensions: ['js', 'svelte'],
+  moduleFileExtensions: ['js', 'ts', 'svelte'],
   transform: {
     '^.+\\.(t|j)sx?$': ['@swc/jest'],
     '^.+\\.svelte$': 'svelte-jester',
