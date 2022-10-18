@@ -14,6 +14,9 @@ a duration. Set an action to execute when the timer runs out.
 - Somewhat pleasant presentation and decent UX.
 - Integration with events, so you can run an action when the timer expires
 
+> Note: this still does have a few wrinkles to work out, though they're more cosmetic
+> than functional.
+
 ## Description
 
 This is a single input component that lets you input a duration for a timer, set
