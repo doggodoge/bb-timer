@@ -54,3 +54,9 @@ You can also re-build everytime you make a change to your plugin with the comman
 ```shell
 pnpm run watch
 ```
+
+To run tests:
+
+```shell
+pnpm run test
+```
