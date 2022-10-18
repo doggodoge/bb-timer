@@ -2,7 +2,8 @@
 
 [![Release](https://github.com/doggodoge/bb-timer/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/doggodoge/bb-timer/actions/workflows/release.yml)
 
-![fancy-password](https://user-images.githubusercontent.com/8438991/193717758-fd590d3b-bbb1-4e51-99a5-339e989fc164.gif)
+![timer](https://user-images.githubusercontent.com/8438991/196497931-251c60f9-38e5-42d7-8174-1d3867fb7677.gif)
+
 
 This budibase plugin adds a timer component. Click the timer input, and type in
 a duration. Set an action to execute when the timer runs out.
