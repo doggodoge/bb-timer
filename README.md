@@ -31,14 +31,26 @@ reset the timer.
 
 ## Instructions
 
-To build your new plugin run the following in your Budibase CLI:
+This project uses the `pnpm` package manager. You will need to install that before continuing:
 
 ```shell
-budi plugins --build
+npm install -g pnpm
+```
+
+To set up the project and pull dependencies, run:
+
+```shell
+pnpm install
+```
+
+To build your new plugin run the following:
+
+```shell
+pnpm run build
 ```
 
 You can also re-build everytime you make a change to your plugin with the command:
 
 ```shell
-budi plugins --watch
+pnpm run watch
 ```
