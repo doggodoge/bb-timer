@@ -1,4 +1,6 @@
-# Budibase Timer Plugin ⏳
+Archived on GitHub and moved to https://git.sr.ht/~gary_moore/bb-timer
+
+    # Budibase Timer Plugin ⏳
 
 [![Release](https://github.com/doggodoge/bb-timer/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/doggodoge/bb-timer/actions/workflows/release.yml)
 
